@@ -28,6 +28,6 @@ Route::prefix('admin')->group(function () {
 // });
 
 Route::get('/listbarang/{id}/{nama}', [ListBarangController::class, 'tampilkan']);
-Route::get('/Dashboard', [DashboardController::class, 'index']);
+Route::get('/DashboardP3', [DashboardController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact',[HomeController::class, 'Contact']);

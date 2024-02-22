@@ -10,6 +10,7 @@ class DashboardController extends Controller
     {
         $nama = "M Zaini Ridha Ridha";
         $pekerjaan = "Student";
-        return view('dashboard', compact('nama', 'pekerjaan'));
+        $nim = "3312301106";
+        return view('dashboard', compact('nama', 'pekerjaan', 'nim'));
     }
 }
