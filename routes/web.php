@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ListItemController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +37,11 @@ Route::prefix('admin')->group(function(){
 //     return view ('list_barang', compact('id', 'nama'));
 // });
 
-Route::get('/listitem/{id}/{nama}/{stok}/{harga}', [ListItemController::class, 'tampil']);
+Route::get('/dashboard', [DashboardController::class, 'dashboard']);
+Route::get('/ListBarang106', [DashboardController::class, 'listbarang106']);
+Route::get('/ListBarang097', [DashboardController::class, 'listbarang097']);
+Route::get('/ListBarang119', [DashboardController::class, 'listbarang119']);
+Route::get('/ListBarang096', [DashboardController::class, 'listbarang096']);
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
