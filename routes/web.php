@@ -7,6 +7,7 @@ use App\Http\Controllers\ListBarangController099;
 use App\Http\Controllers\ListBarangController106;
 use App\Http\Controllers\ListBarangController119;
 use App\Http\Controllers\ListBarangController096;
+use App\Http\Controllers\TentangController;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,3 +50,5 @@ Route::get('/ListBarangView096', [ListBarangController096::class, 'tampilkan']);
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
+
+Route::get('/Tentang', [TentangController::class, 'tentang']);
