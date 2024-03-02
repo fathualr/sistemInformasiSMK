@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ListBarangControler extends Controller
+class ListBarangController096 extends Controller
 {
     public function getData()
     {

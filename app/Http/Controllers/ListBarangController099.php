@@ -19,6 +19,6 @@ class ListBarangController099 extends Controller
     }
     Public function tampilkan(){
         $data = $this->getData();
-        return view('list_barang', compact('data'));
+        return view('listbarangview099', compact('data'));
     }
 }

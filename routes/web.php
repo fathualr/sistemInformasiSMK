@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\ListBarangController099;
+use App\Http\Controllers\ListBarangController106;
+use App\Http\Controllers\ListBarangController119;
+use App\Http\Controllers\ListBarangController096;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,10 +42,10 @@ Route::prefix('admin')->group(function(){
 // });
 
 Route::get('/dashboard', [DashboardController::class, 'dashboard']);
-Route::get('/ListBarang106', [DashboardController::class, 'listbarang106']);
-Route::get('/ListBarang097', [DashboardController::class, 'listbarang097']);
-Route::get('/ListBarang119', [DashboardController::class, 'listbarang119']);
-Route::get('/ListBarang096', [DashboardController::class, 'listbarang096']);
+Route::get('/ListBarangView106', [ListBarangController106::class, 'tampilkan']);
+Route::get('/ListBarangView099', [ListBarangController099::class, 'tampilkan']);
+Route::get('/ListBarangView119', [ListBarangController119::class, 'tampilkan']);
+Route::get('/ListBarangView096', [ListBarangController096::class, 'tampilkan']);
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);

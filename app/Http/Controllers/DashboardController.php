@@ -9,11 +9,11 @@ class DashboardController extends Controller
     public function dashboard(){
         return view('dashboard');
     }
-    public function lisbarang106(){
-        return view('listbarang106');
+    public function listbarang106(){
+        return view('listbarangview106');
     }
-    public function lisbarang097(){
-        return view('listbarang');
+    public function listbarang099(){
+        return view('listbarangview099');
     }
     public function lisbarang119(){
         return view('listbarang119');
