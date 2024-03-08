@@ -15,12 +15,15 @@ class HomeController extends Controller
 
         // return view('home')->with($data);
 
-        $nama = 'Muhammad Fathu Al Razi';
+        $nama = 'Shafiq';
         $pekerjaan = 'Mahasiswa';
         return view('home', compact('nama', 'pekerjaan'));
     }
 
     public function contact(){
         return view('contact');
+    }
+    public function profile(){
+        return view('profile');
     }
 }

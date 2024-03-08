@@ -42,5 +42,6 @@ Route::get('/listitem/{id}/{nama}/{stok}/{harga}', [ListItemController::class, '
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
+Route::get('/profile', [HomeController::class, 'profile']);
 
 Route:: get('/login', [loginController::class, 'show']);
