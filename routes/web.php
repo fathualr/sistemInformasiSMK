@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\Ekstrakulikuler5Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,10 @@ use App\Http\Controllers\DashboardController;
 
 Route::get('/welcome', function () {
     return view('welcome');
+});
+
+Route::get('/images096', function () {
+    return view('images096');
 });
 
 Route::get('/user/{id}', function ($id) {
@@ -42,6 +47,7 @@ Route::get('/ListBarang106', [DashboardController::class, 'listbarang106']);
 Route::get('/ListBarang097', [DashboardController::class, 'listbarang097']);
 Route::get('/ListBarang119', [DashboardController::class, 'listbarang119']);
 Route::get('/ListBarang096', [DashboardController::class, 'listbarang096']);
+Route::get('/ekstrakulikuler_5', [Ekstrakulikuler5Controller::class, 'tampilkan']);
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
