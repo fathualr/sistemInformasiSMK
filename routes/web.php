@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\productController;
 
 /*
 |--------------------------------------------------------------------------
@@ -42,6 +43,8 @@ Route::get('/ListBarang106', [DashboardController::class, 'listbarang106']);
 Route::get('/ListBarang097', [DashboardController::class, 'listbarang097']);
 Route::get('/ListBarang119', [DashboardController::class, 'listbarang119']);
 Route::get('/ListBarang096', [DashboardController::class, 'listbarang096']);
+
+Route::get('/list_product', [productController::class, 'tampilkan']);
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
