@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\listController;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,3 +46,5 @@ Route::get('/ListBarang096', [DashboardController::class, 'listbarang096']);
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/contact', [HomeController::class, 'contact']);
+
+Route::get('/list', [listController::class, 'show']);
